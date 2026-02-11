@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, useMemo } from "react"
 import { useChat } from "@ai-sdk/react"
 import { DefaultChatTransport } from "ai"
 import { Card, CardContent } from "@/components/ui/card"
@@ -47,11 +47,12 @@ const quickPrompts = [
   { icon: Heart, text: "Tips to reduce stress" },
 ]
 
-function getMessageText(parts: { type: string; text?: string }[]): string {
+function getMessageText(parts: unknown): string {
   if (!parts || !Array.isArray(parts)) return ""
   return parts
     .filter(
-      (p): p is { type: "text"; text: string } => p.type === "text"
+      (p): p is { type: "text"; text: string } =>
+        p && typeof p === "object" && p.type === "text" && typeof p.text === "string"
     )
     .map((p) => p.text)
     .join("")
@@ -65,18 +66,22 @@ export function CoachView({
   const [input, setInput] = useState("")
   const scrollRef = useRef<HTMLDivElement>(null)
 
-  const { messages, sendMessage, status } = useChat({
-    transport: new DefaultChatTransport({
-      api: "/api/chat",
-      prepareSendMessagesRequest: ({ id, messages: msgs }) => ({
-        body: {
-          messages: msgs,
-          id,
-          context: { profile, assessment },
-        },
+  const transport = useMemo(
+    () =>
+      new DefaultChatTransport({
+        api: "/api/chat",
+        prepareSendMessagesRequest: ({ id, messages: msgs }) => ({
+          body: {
+            messages: msgs,
+            id,
+            context: { profile, assessment },
+          },
+        }),
       }),
-    }),
-  })
+    [profile, assessment]
+  )
+
+  const { messages, sendMessage, status } = useChat({ transport })
 
   const isLoading = status === "streaming" || status === "submitted"
 
@@ -136,7 +141,7 @@ export function CoachView({
           ) : (
             <div className="flex flex-col gap-4">
               {messages.map((message) => {
-                const text = getMessageText(message.parts as { type: string; text?: string }[])
+                const text = getMessageText(message.parts)
                 const isUser = message.role === "user"
 
                 return (

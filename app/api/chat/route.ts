@@ -7,31 +7,31 @@ import {
 export const maxDuration = 60
 
 export async function POST(req: Request) {
-  const {
-    messages,
-    context,
-  }: {
-    messages: UIMessage[]
-    context?: {
-      profile?: {
-        full_name?: string
-        age?: number
-        weight_kg?: number
-        height_cm?: number
-        fitness_goal?: string
-        activity_level?: string
-        dietary_preference?: string
+  const body = await req.json()
+
+  // Support both formats: direct messages array or wrapped with context
+  const messages: UIMessage[] = body.messages || []
+  const context = body.context as
+    | {
+        profile?: {
+          full_name?: string
+          age?: number
+          weight_kg?: number
+          height_cm?: number
+          fitness_goal?: string
+          activity_level?: string
+          dietary_preference?: string
+        }
+        assessment?: {
+          bmi?: number
+          bmi_category?: string
+          health_conditions?: string[]
+          injuries?: string[]
+          sleep_hours?: number
+          stress_level?: string
+        }
       }
-      assessment?: {
-        bmi?: number
-        bmi_category?: string
-        health_conditions?: string[]
-        injuries?: string[]
-        sleep_hours?: number
-        stress_level?: string
-      }
-    }
-  } = await req.json()
+    | undefined
 
   const profileInfo = context?.profile
     ? `User Profile:
