@@ -4,6 +4,7 @@
   "private": true,
   "packageManager": "pnpm@10.11.0",
   "scripts": {
+    "preinstall": "rm -rf node_modules || true",
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
@@ -73,8 +74,10 @@
     "tailwindcss": "^3.4.17",
     "typescript": "5.7.3"
   },
-  "overrides": {
-    "@types/react": "19.2.7",
-    "@types/react-dom": "19.2.3"
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.2.7",
+      "@types/react-dom": "19.2.3"
+    }
   }
 }
