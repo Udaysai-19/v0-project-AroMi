@@ -1,5 +1,4 @@
 import {
-  consumeStream,
   convertToModelMessages,
   streamText,
   type UIMessage,
@@ -77,6 +76,5 @@ Remember: You are AROMI (AROgyaMItra's AI coach). Be supportive and evidence-bas
 
   return result.toUIMessageStreamResponse({
     originalMessages: messages,
-    consumeSseStream: consumeStream,
   })
 }
