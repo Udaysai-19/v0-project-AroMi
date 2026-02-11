@@ -27,7 +27,7 @@ export function CTA() {
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-primary-foreground/80">
               Join thousands of users who have already started their wellness
-              journey with ArogyaMitra. Your AI health companion is waiting.
+              journey with AroMi. Your AI health companion is waiting.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button

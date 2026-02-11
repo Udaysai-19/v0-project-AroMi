@@ -42,9 +42,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl"
           >
-            ArogyaMitra combines AI coaching, personalized workout plans, and
+            AroMi combines AI coaching, personalized workout plans, and
             smart nutrition guidance to help you achieve your fitness goals.
-            Meet AROMI, your always-on health AI.
+            Meet AroMi, your always-on health AI.
           </motion.p>
 
           <motion.div
@@ -123,7 +123,7 @@ export function Hero() {
                 <Brain className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <p className="text-sm font-medium text-card-foreground">AROMI AI Coach</p>
+                <p className="text-sm font-medium text-card-foreground">AroMi AI Coach</p>
                 <p className="text-xs text-muted-foreground">Your personal guide</p>
               </div>
             </div>

@@ -311,7 +311,7 @@ export function DashboardContent({
                 <MessageCircle className="h-6 w-6 text-chart-4 group-hover:text-foreground" />
               </div>
               <div>
-                <p className="font-medium text-foreground">Chat with AROMI</p>
+                <p className="font-medium text-foreground">Chat with AroMi</p>
                 <p className="text-sm text-muted-foreground">
                   Get AI health advice
                 </p>

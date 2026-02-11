@@ -11,7 +11,7 @@ export function Footer() {
               <Heart className="h-4 w-4 text-primary-foreground" />
             </div>
             <span className="font-display text-lg font-bold text-foreground">
-              ArogyaMitra
+              AroMi
             </span>
           </div>
 
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} ArogyaMitra. All rights reserved.
+            &copy; {new Date().getFullYear()} AroMi. All rights reserved.
           </p>
         </div>
       </div>

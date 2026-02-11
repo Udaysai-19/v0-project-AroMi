@@ -11,9 +11,9 @@ const _spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "ArogyaMitra - Your AI Health & Fitness Companion",
+  title: "AroMi - Your AI Health & Fitness Companion",
   description:
-    "Personalized fitness plans, nutrition guidance, and real-time AI coaching powered by AROMI.",
+    "Personalized fitness plans, nutrition guidance, and real-time AI coaching powered by AroMi.",
   generator: "v0.app",
 }
 

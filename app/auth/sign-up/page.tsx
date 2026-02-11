@@ -86,7 +86,7 @@ export default function SignUpPage() {
             <Heart className="h-5 w-5 text-primary-foreground" />
           </div>
           <span className="font-display text-xl font-bold text-primary-foreground">
-            ArogyaMitra
+            AroMi
           </span>
         </Link>
         <div>
@@ -95,11 +95,11 @@ export default function SignUpPage() {
           </h2>
           <p className="mt-3 max-w-sm text-primary-foreground/70">
             Create your free account to unlock AI-powered fitness plans,
-            nutrition guidance, and your personal AROMI coach.
+            nutrition guidance, and your personal AroMi coach.
           </p>
         </div>
         <p className="text-sm text-primary-foreground/50">
-          &copy; {new Date().getFullYear()} ArogyaMitra
+          &copy; {new Date().getFullYear()} AroMi
         </p>
       </div>
 
@@ -112,7 +112,7 @@ export default function SignUpPage() {
                 <Heart className="h-5 w-5 text-primary-foreground" />
               </div>
               <span className="font-display text-xl font-bold text-foreground">
-                ArogyaMitra
+                AroMi
               </span>
             </Link>
           </div>

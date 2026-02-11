@@ -53,7 +53,7 @@ export async function POST(req: Request) {
 - Stress Level: ${context.assessment.stress_level || "Not set"}`
     : ""
 
-  const systemPrompt = `You are AROMI, an AI-powered health and fitness coach for ArogyaMitra.
+  const systemPrompt = `You are AroMi, an AI-powered health and fitness coach.
 You are warm, motivating, and knowledgeable about fitness, nutrition, and wellness.
 You provide personalized advice based on the user's profile and health data.
 Always be encouraging and provide actionable, specific advice.
@@ -65,7 +65,7 @@ ${profileInfo}
 
 ${assessmentInfo}
 
-Remember: You are AROMI (AROgyaMItra's AI coach). Be supportive and evidence-based in your recommendations.`
+Remember: You are AroMi, an AI health coach. Be supportive and evidence-based in your recommendations.`
 
   const result = streamText({
     model: "openai/gpt-4o-mini",

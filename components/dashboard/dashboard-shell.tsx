@@ -52,7 +52,7 @@ const navItems = [
   { href: "/dashboard/nutrition", label: "Nutrition", icon: Salad },
   { href: "/dashboard/progress", label: "Progress", icon: TrendingUp },
   { href: "/dashboard/achievements", label: "Achievements", icon: Trophy },
-  { href: "/dashboard/coach", label: "AROMI Coach", icon: MessageCircle },
+  { href: "/dashboard/coach", label: "AroMi Coach", icon: MessageCircle },
   { href: "/dashboard/profile", label: "Profile", icon: UserCircle },
 ]
 
@@ -85,7 +85,7 @@ export function DashboardShell({ user, profile, children }: DashboardShellProps)
             <Heart className="h-4 w-4 text-primary-foreground" />
           </div>
           <span className="font-display text-lg font-bold text-card-foreground">
-            ArogyaMitra
+            AroMi
           </span>
         </div>
 
@@ -150,7 +150,7 @@ export function DashboardShell({ user, profile, children }: DashboardShellProps)
                   <Heart className="h-4 w-4 text-primary-foreground" />
                 </div>
                 <span className="font-display text-lg font-bold text-card-foreground">
-                  ArogyaMitra
+                  AroMi
                 </span>
               </div>
               <button onClick={() => setSidebarOpen(false)} aria-label="Close sidebar">
