@@ -97,7 +97,7 @@ export function CoachView({
     <div className="flex h-[calc(100vh-8rem)] flex-col gap-4">
       <div>
         <h2 className="font-display text-xl font-bold text-foreground">
-          AROMI - AI Health Coach
+          AroMi - AI Health Coach
         </h2>
         <p className="text-sm text-muted-foreground">
           Your personal AI-powered fitness and wellness assistant
@@ -116,7 +116,7 @@ export function CoachView({
                 Hello{profile?.full_name ? `, ${profile.full_name.split(" ")[0]}` : ""}!
               </h3>
               <p className="mt-1 max-w-sm text-center text-sm text-muted-foreground">
-                {"I'm AROMI, your AI health coach. Ask me about workouts, nutrition, sleep, or any wellness topic."}
+                {"I'm AroMi, your AI health coach. Ask me about workouts, nutrition, sleep, or any wellness topic."}
               </p>
 
               {/* Quick prompts */}
@@ -201,7 +201,7 @@ export function CoachView({
             <Input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask AROMI anything about fitness, nutrition, or wellness..."
+              placeholder="Ask AroMi anything about fitness, nutrition, or wellness..."
               disabled={isLoading}
               className="flex-1"
             />
@@ -219,7 +219,7 @@ export function CoachView({
             </Button>
           </form>
           <p className="mt-2 text-center text-xs text-muted-foreground">
-            AROMI provides general wellness guidance. Always consult a healthcare professional for medical advice.
+            AroMi provides general wellness guidance. Always consult a healthcare professional for medical advice.
           </p>
         </CardContent>
       </Card>

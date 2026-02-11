@@ -73,7 +73,7 @@ export function FloatingAromi({ profile }: FloatingAromiProps) {
         <button
           onClick={() => setOpen(true)}
           className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg transition-transform hover:scale-105 active:scale-95"
-          aria-label="Open AROMI assistant"
+          aria-label="Open AroMi assistant"
         >
           <MessageCircle className="h-6 w-6 text-primary-foreground" />
         </button>
@@ -89,7 +89,7 @@ export function FloatingAromi({ profile }: FloatingAromiProps) {
                 <Heart className="h-4 w-4 text-primary-foreground" />
               </div>
               <div>
-                <p className="text-sm font-semibold text-primary-foreground">AROMI</p>
+                <p className="text-sm font-semibold text-primary-foreground">AroMi</p>
                 <p className="text-xs text-primary-foreground/70">AI Health Coach</p>
               </div>
             </div>
@@ -110,7 +110,7 @@ export function FloatingAromi({ profile }: FloatingAromiProps) {
                   <Heart className="h-6 w-6 text-primary" />
                 </div>
                 <p className="text-sm font-medium text-foreground">
-                  {"Hi! I'm AROMI"}
+                  {"Hi! I'm AroMi"}
                 </p>
                 <p className="mt-1 text-center text-xs text-muted-foreground">
                   Ask me anything about fitness or wellness
@@ -178,7 +178,7 @@ export function FloatingAromi({ profile }: FloatingAromiProps) {
               <Input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask AROMI..."
+                placeholder="Ask AroMi..."
                 disabled={isLoading}
                 className="h-9 flex-1 text-xs"
               />

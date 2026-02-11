@@ -46,9 +46,9 @@ const features = [
   },
   {
     icon: MessageCircle,
-    title: "AROMI AI Coach",
+    title: "AroMi AI Coach",
     description:
-      "Chat with AROMI anytime for fitness advice, motivation, form corrections, and real-time health insights.",
+      "Chat with AroMi anytime for fitness advice, motivation, form corrections, and real-time health insights.",
   },
   {
     icon: HeartPulse,
@@ -97,7 +97,7 @@ export function Features() {
             Everything You Need for Your Wellness Journey
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground">
-            From AI-driven assessments to gamified achievements, ArogyaMitra
+            From AI-driven assessments to gamified achievements, AroMi
             brings together every tool you need under one platform.
           </p>
         </div>

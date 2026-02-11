@@ -48,7 +48,7 @@ export default function LoginPage() {
             <Heart className="h-5 w-5 text-primary-foreground" />
           </div>
           <span className="font-display text-xl font-bold text-primary-foreground">
-            ArogyaMitra
+            AroMi
           </span>
         </Link>
         <div>
@@ -57,11 +57,11 @@ export default function LoginPage() {
           </h2>
           <p className="mt-3 max-w-sm text-primary-foreground/70">
             Log in to continue tracking your progress, follow your personalized
-            plans, and chat with AROMI.
+            plans, and chat with AroMi.
           </p>
         </div>
         <p className="text-sm text-primary-foreground/50">
-          &copy; {new Date().getFullYear()} ArogyaMitra
+          &copy; {new Date().getFullYear()} AroMi
         </p>
       </div>
 
@@ -74,7 +74,7 @@ export default function LoginPage() {
                 <Heart className="h-5 w-5 text-primary-foreground" />
               </div>
               <span className="font-display text-xl font-bold text-foreground">
-                ArogyaMitra
+                AroMi
               </span>
             </Link>
           </div>

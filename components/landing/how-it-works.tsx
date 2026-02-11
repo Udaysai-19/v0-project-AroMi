@@ -30,7 +30,7 @@ const steps = [
     step: "04",
     title: "Track & Achieve",
     description:
-      "Log your progress, earn achievements, unlock charity donations, and let AROMI guide you to your goals.",
+      "Log your progress, earn achievements, unlock charity donations, and let AroMi guide you to your goals.",
   },
 ]
 
@@ -49,7 +49,7 @@ export function HowItWorks() {
             Your Wellness Journey in 4 Steps
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground">
-            Getting started with ArogyaMitra is simple. Our AI handles the
+            Getting started with AroMi is simple. Our AI handles the
             complexity so you can focus on your health.
           </p>
         </div>
