@@ -6,7 +6,6 @@ import { CTA } from "@/components/landing/cta"
 import { Footer } from "@/components/landing/footer"
 
 export default function LandingPage() {
-  console.log("[v0] LandingPage rendering")
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
